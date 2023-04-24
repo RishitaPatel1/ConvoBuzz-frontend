@@ -51,14 +51,14 @@ function Sidebar() {
           </Link>
         </div>
 
-        {/* <div className="flex flex-col ml-1 justify-center group items-center px-4  h-full  ">
-          <Link to="/voicecall">
+         <div className="flex flex-col ml-1 justify-center group items-center px-4  h-full  ">
+          <Link to="/audio">
 
             <div
               className="border-b-2 group-hover:border-blue-700 border-transparent  flex flex-col gap-2 items-center justify-between py-2">
               <div>
                 <svg
-                  className="h-5 w-6 group-hover:text-blue-700 "
+                  className="h-6 w-6 group-hover:text-blue-700 "
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -69,10 +69,10 @@ function Sidebar() {
                   />
                 </svg>
               </div>
-              <span className="text-[14px] group-hover:text-blue-700 ">Call</span>
+              <span className="text-[14px] group-hover:text-blue-700 ">Audio Call</span>
             </div>
           </Link>
-        </div> */}
+        </div> 
 
         {/* <div className="flex flex-col  justify-center group items-center px-4  h-full  ">
           <Link to="/contact">

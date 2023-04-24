@@ -10,10 +10,10 @@ import {
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
- //import Login from "../layout/Login";
+//import Login from "../layout/Login";
 import Login from "../Authentication/Login";
 import SignupForm from "../layout/SignupForm";
-import Landingpage from "./landingpage";
+import Landingpage from "./Landingpage";
 
 function Homepage() {
   const navigate = useNavigate();
@@ -26,9 +26,9 @@ function Homepage() {
 
   return (
     <div>
-    <Landingpage />
-    <Container maxW="xl" centerContent>
-      {/* <Box
+      <Landingpage />
+      <Container maxW="xl" centerContent>
+        {/* <Box
           d="flex"
           justifyContent="center"
           p={3}
@@ -38,34 +38,34 @@ function Homepage() {
           borderRadius="lg"
           borderWidth="1px"
         > */}
-      {/* <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <img
             className="w-[100px] h-[100px]"
             src="./images/icons/convobuzz.svg"
           />
           </div> */}
-      {/* <Text fontSize="4xl" fontFamily="Work sans">
+        {/* <Text fontSize="4xl" fontFamily="Work sans">
             ConVoBuzZ
           </Text> */}
-      {/* </Box> */}
-    
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
-        <Tabs isFitted variant="soft-rounded">
-          <TabList mb="1em">
-            <Tab>Login</Tab>
-            <Tab>Sign Up</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <Login />
-            </TabPanel>
-            <TabPanel>
-              <SignupForm />
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Box>
-    </Container>
+        {/* </Box> */}
+
+        <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+          <Tabs isFitted variant="soft-rounded">
+            <TabList mb="1em">
+              <Tab>Login</Tab>
+              <Tab>Sign Up</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <Login />
+              </TabPanel>
+              <TabPanel>
+                <SignupForm />
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+        </Box>
+      </Container>
     </div>
   );
 }

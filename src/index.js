@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ChatProvider>
-        <ChakraProvider theme={theme}>
+        <ChakraProvider>
           <App />
         </ChakraProvider>
       </ChatProvider>

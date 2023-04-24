@@ -7,17 +7,18 @@ import ChatBox from '../ChatContents/ChatBox';
 import Sidebar from '../layout/Sidebar';
 
 const ChatPage1 = () => {
-  console.log("in user ")
   const { user } = ChatState();
   
   const[fetchAgain, setFetchAgain] = useState(false);
     
   
   return (
-    <div>
+    <>
     <div style = {{ width: "100% ",backgroundColor:"#93BFCF"}}>
       {user && <SideDrawer/>}
       <Sidebar />
+    </div>
+    <div>
       <Box display="flex" justifyContent="space-between" w="100%" h="91.5vh" p="10px">
       {user && <MyChats fetchAgain={fetchAgain} />}
         {user && (
@@ -25,7 +26,7 @@ const ChatPage1 = () => {
         )}
       </Box>
     </div>
-    </div>
+  </>
   )
 }
 

@@ -49,7 +49,7 @@ const SideDrawer = () => {
       chats,
       setChats,
     } = ChatState();
-   
+   console.log("user",user);
     const toast = useToast();
     const { isOpen, onOpen, onClose } = useDisclosure();
     const navigate = useNavigate();
@@ -81,7 +81,7 @@ const SideDrawer = () => {
           };
     
           const { data } = await axios.get(SERVER_URL +`/api/user?search=${search}`, config);
-    
+          console.log(data);
           setLoading(false);
           setSearchResult(data);
         } catch (error) {
@@ -127,6 +127,7 @@ const SideDrawer = () => {
   
     return (
     <>
+      <div className="sidedrawer">
       <Box display="flex"
         justifyContent="space-between"
         alignItems="center"
@@ -179,7 +180,7 @@ const SideDrawer = () => {
                 size="sm"
                 cursor="pointer"
                 name={user.name}
-                src={user.pic}
+                 src={user.pic}
               />
             </MenuButton>
             <MenuList>
@@ -221,6 +222,7 @@ const SideDrawer = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
+      </div>
     </>
   )
 }

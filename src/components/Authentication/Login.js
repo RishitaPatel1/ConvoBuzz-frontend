@@ -72,6 +72,7 @@ const Login = () => {
   };
 
   return (
+    //  <div className="w-full sm:w-[400px] bg-[#93bfcf] mx-auto rounded-xl p-4">
     <VStack spacing="10px">
       <FormControl id="email" isRequired>
         <FormLabel>Email Address</FormLabel>
@@ -121,6 +122,7 @@ const Login = () => {
         Get Guest User Credentials
       </Button>
     </VStack>
+    //  </div>
   );
 };
 

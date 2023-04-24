@@ -13,7 +13,7 @@ import config from "../../config/default";
 
 const MyChats = ({ fetchAgain }) => {
   const SERVER_URL = config.SERVER_URL;
-  const [loggedUser, setLoggedUser] = useState();
+  const [loggedUser, setLoggedUser] = useState(JSON.parse(localStorage.getItem("userInfo")));
 
   const { selectedChat, setSelectedChat, user, chats, setChats } = ChatState();
 
