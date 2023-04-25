@@ -51,7 +51,7 @@ function Sidebar() {
           </Link>
         </div>
 
-         <div className="flex flex-col ml-1 justify-center group items-center px-4  h-full  ">
+         {/* <div className="flex flex-col ml-1 justify-center group items-center px-4  h-full  ">
           <Link to="/audio">
 
             <div
@@ -72,7 +72,7 @@ function Sidebar() {
               <span className="text-[14px] group-hover:text-blue-700 ">Audio Call</span>
             </div>
           </Link>
-        </div> 
+        </div>  */}
 
         {/* <div className="flex flex-col  justify-center group items-center px-4  h-full  ">
           <Link to="/contact">
