@@ -23,8 +23,8 @@ const VideoHome = () => {
     <div>
       {user && <SideDrawer />}
       <Sidebar />
-      <div className="grid grid-cols-2">
-        <div className="pl-[400px] pt-6">
+      <div className="flex justify-between px-40 py-10">
+        <div className="">
           <div className="rounded-xl bg-[#93BFCF] py-4 h-[500px] w-[500px]">
             <div className="flex justify-center items-center">
               <img
@@ -64,7 +64,7 @@ const VideoHome = () => {
           </div>
         </div>
 
-        <div className="pr-[300px] pt-6">
+        <div className="">
           <div className="rounded-xl bg-[#93BFCF] py-4 h-[500px] w-[500px]">
             <div className="flex justify-center items-center">
               <img
